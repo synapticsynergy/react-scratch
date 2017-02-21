@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router';
 
 const HomePage = () => {
+  console.log('yea...');
   const fetchOptions = {
     method: 'POST',
     headers: {
