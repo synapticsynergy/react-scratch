@@ -3,7 +3,9 @@ import {Link} from 'react-router';
 
 const HomePage = () => {
   fetch("http://localhost:3333").then(function(data){
-    console.log(data,'data');
+    return data.json()
+  }).then(function(json){
+    console.log(json);
   });
   return (
     <div>
